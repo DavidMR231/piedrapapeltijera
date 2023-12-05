@@ -1,30 +1,51 @@
 # Piedra, Papel o Tijera - Juego en HTML/JavaScript
 
-Este proyecto implementa el clásico juego de piedra, papel o tijera en una página web simple utilizando HTML y JavaScript. Permite que el usuario juegue contra la máquina, y muestra el resultado del juego mediante alertas en el navegador.
+Este es un simple juego de Piedra, Papel o Tijera implementado en HTML y JavaScript. Permite al usuario elegir entre tres opciones (piedra, papel o tijera), generando luego una elección aleatoria para la máquina. El resultado del juego se determina comparando las elecciones del jugador y de la máquina.
 
-## Características
+## Cómo Jugar
 
-- **Elección del Jugador:** El jugador ingresa su elección mediante un prompt, donde debe introducir el número correspondiente a su elección (1 para piedra, 2 para papel, 3 para tijera).
+1. Abre el archivo `index.html` en tu navegador.
 
-- **Elección de la Máquina:** La máquina elige aleatoriamente entre piedra, papel o tijera mediante el uso de la función `Math.random()`.
+2. Se te pedirá que ingreses un número para representar tu elección:
+   - 1 para Piedra 🪨
+   - 2 para Papel 📄
+   - 3 para Tijera ✂️
 
-- **Visualización de Elecciones:** Las elecciones del jugador y de la máquina se visualizan mediante alertas que muestran los emojis correspondientes a piedra, papel o tijera.
+3. El juego mostrará tus elecciones y las de la máquina.
 
-- **Resultado del Juego:** Se utiliza una estructura `switch` para evaluar el resultado del juego. Muestra alertas indicando si el juego resultó en empate, o si el jugador ganó o perdió.
+4. El resultado del juego se mostrará en una alerta:
+   - Empate si las elecciones son iguales.
+   - Ganaste si vences a la elección de la máquina.
+   - Perdiste si la máquina vence tu elección.
 
-## Instrucciones de Juego
+## Detalles Técnicos
 
-1. Abre el archivo `index.html` en un navegador web.
-2. Ingresa el número correspondiente a tu elección cuando se solicite (1 para piedra, 2 para papel, 3 para tijera).
-3. Observa la elección de la máquina y el resultado del juego.
+### Función `aleatorio(min, max)`
 
-## Ejecución del Juego
+Esta función genera un número aleatorio entre `min` y `max` (ambos inclusive).
 
-Este juego se ejecuta completamente en el navegador y no requiere de ninguna configuración adicional.
+### Variables
 
-## Notas Adicionales
+- `jugador`: Almacena la elección del jugador.
+- `pc`: Almacena la elección aleatoria de la máquina.
 
-- Las elecciones y resultados se comunican mediante alertas para una experiencia simple y amigable.
-- El código utiliza emojis para representar visualmente las opciones de piedra, papel y tijera.
+### Elecciones del Jugador y de la Máquina
+
+Las elecciones se muestran en alertas para informar al usuario sobre las opciones seleccionadas.
+
+### Combate
+
+Se evalúa el resultado del juego con las siguientes condiciones:
+- Empate si las elecciones son iguales.
+- Ganaste si vences a la elección de la máquina.
+- Perdiste si la máquina vence tu elección.
+
+### Mensajes de Alerta
+
+Se utilizan alertas para comunicar de manera clara y sencilla el resultado del juego y las elecciones realizadas por el jugador y la máquina.
+
+## Notas
+
+- Si el jugador ingresa un número que no corresponde a ninguna de las opciones, se mostrará un mensaje indicando que no es válida.
 
 ¡Diviértete jugando piedra, papel o tijera! 🪨 📄 ✂️

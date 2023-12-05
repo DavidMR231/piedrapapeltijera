@@ -1,47 +1,35 @@
 # Juego de Piedra, Papel o Tijera
 
-Este es un simple juego de Piedra, Papel o Tijera implementado en HTML y JavaScript. Permite al usuario competir contra la computadora en una serie de rondas hasta que uno de ellos alcance 3 victorias o 3 derrotas.
+¡Bienvenido al Juego de Piedra, Papel o Tijera! Este repositorio alberga una implementación interactiva en HTML y JavaScript para disfrutar de este clásico juego. ¡Vamos a explorar cómo jugar y personalizarlo según tus preferencias!
 
-## Funciones
+## Contenido del Repositorio
 
-### `aleatorio(min, max)`
+- **index.html**: Estructura básica de la página web y enlace al archivo JavaScript `js/index.js`.
 
-Esta función genera un número aleatorio en un rango dado. Se utiliza para que la computadora elija una jugada aleatoria.
+- **js/index.js**: Lógica del juego que incluye funciones para generar números aleatorios, convertir elecciones a texto y gestionar estadísticas. Además, contiene el bucle principal del juego que se ejecuta hasta que un jugador alcance 3 victorias o derrotas.
 
-### `eleccion(jugada)`
+## Cómo Jugar
 
-Esta función convierte el número de la jugada a su representación en texto. Asigna un emoji correspondiente a cada opción (Piedra, Papel o Tijera) y devuelve el resultado.
+1. Abre el archivo `index.html` en tu navegador favorito.
 
-## Estadísticas del Juego
+2. Selecciona tu elección:
+   - Piedra: Ingresa el número 1.
+   - Papel: Ingresa el número 2.
+   - Tijera: Ingresa el número 3.
 
-El juego lleva un seguimiento de las estadísticas a lo largo de las rondas:
+3. La computadora realizará su elección de manera aleatoria.
 
-- `victorias`: Número de veces que el jugador ha ganado.
-- `derrotas`: Número de veces que el jugador ha perdido.
-- `empates`: Número de veces que ha habido un empate.
+4. Se mostrarán ambas elecciones y se determinará el resultado:
+   - Empate si ambas elecciones son iguales.
+   - Ganar si vences a la computadora según las reglas del juego.
+   - Perder si la computadora vence tu elección.
 
-## Desarrollo del Juego
+5. El juego continúa hasta que uno de los jugadores alcance 3 victorias o derrotas.
 
-1. **Elección Aleatoria de la Computadora:** La computadora elige una jugada aleatoria (Piedra, Papel o Tijera).
+6. Al final del juego, se presenta un resumen de estadísticas que incluye tus victorias, derrotas y empates.
 
-2. **Entrada del Jugador:** El jugador ingresa su elección mediante una ventana de prompt.
+## Personalización y Contribuciones
 
-3. **Comparación de Jugadas:** Se comparan las elecciones de la computadora y del jugador para determinar el resultado de la ronda.
+Si deseas ajustar el juego o agregar nuevas funcionalidades, explora y modifica el archivo `js/index.js`. Aquí encontrarás la lógica del juego, variables de seguimiento y estadísticas. ¡Anímate a contribuir! Si tienes ideas para mejoras, correcciones o nuevas características, realiza un fork, implementa tus cambios y envía una solicitud de extracción.
 
-4. **Presentación de Resultados:** Se muestran en ventanas de alerta las elecciones de ambas partes y el resultado de la ronda (Empate, Victoria o Derrota).
-
-5. **Finalización del Juego:** El juego continúa hasta que uno de los jugadores alcance 3 victorias o 3 derrotas.
-
-## Resumen de Estadísticas
-
-Al final del juego, se presenta un resumen que muestra cuántas veces el jugador ha ganado, perdido o empatado.
-
-## Instrucciones
-
-1. Abre el archivo `index.html` en tu navegador.
-
-2. Sigue las instrucciones presentadas en la ventana de prompt para ingresar tus elecciones.
-
-3. Disfruta del juego y observa las estadísticas al final.
-
-¡Diviértete jugando Piedra, Papel o Tijera! 🪨📄✂️
+¡Que te diviertas jugando al Piedra, Papel o Tijera! 🎮✊📄✌️

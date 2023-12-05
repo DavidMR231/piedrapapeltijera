@@ -44,8 +44,4 @@ Al final del juego, se presenta un resumen que muestra cuántas veces el jugador
 
 3. Disfruta del juego y observa las estadísticas al final.
 
-<<<<<<< HEAD
 ¡Diviértete jugando Piedra, Papel o Tijera! 🪨📄✂️
-=======
-¡Diviértete jugando Piedra, Papel o Tijera! 🪨📄✂️
->>>>>>> 0688be405db64c1a84838154e6653f25c2aa9c9b

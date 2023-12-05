@@ -1,51 +1,47 @@
-# Piedra, Papel o Tijera - Juego en HTML/JavaScript
+# Juego de Piedra, Papel o Tijera
 
-Este es un simple juego de Piedra, Papel o Tijera implementado en HTML y JavaScript. Permite al usuario elegir entre tres opciones (piedra, papel o tijera), generando luego una elección aleatoria para la máquina. El resultado del juego se determina comparando las elecciones del jugador y de la máquina.
+Este es un simple juego de Piedra, Papel o Tijera implementado en HTML y JavaScript. Permite al usuario competir contra la computadora en una serie de rondas hasta que uno de ellos alcance 3 victorias o 3 derrotas.
 
-## Cómo Jugar
+## Funciones
+
+### `aleatorio(min, max)`
+
+Esta función genera un número aleatorio en un rango dado. Se utiliza para que la computadora elija una jugada aleatoria.
+
+### `eleccion(jugada)`
+
+Esta función convierte el número de la jugada a su representación en texto. Asigna un emoji correspondiente a cada opción (Piedra, Papel o Tijera) y devuelve el resultado.
+
+## Estadísticas del Juego
+
+El juego lleva un seguimiento de las estadísticas a lo largo de las rondas:
+
+- `victorias`: Número de veces que el jugador ha ganado.
+- `derrotas`: Número de veces que el jugador ha perdido.
+- `empates`: Número de veces que ha habido un empate.
+
+## Desarrollo del Juego
+
+1. **Elección Aleatoria de la Computadora:** La computadora elige una jugada aleatoria (Piedra, Papel o Tijera).
+
+2. **Entrada del Jugador:** El jugador ingresa su elección mediante una ventana de prompt.
+
+3. **Comparación de Jugadas:** Se comparan las elecciones de la computadora y del jugador para determinar el resultado de la ronda.
+
+4. **Presentación de Resultados:** Se muestran en ventanas de alerta las elecciones de ambas partes y el resultado de la ronda (Empate, Victoria o Derrota).
+
+5. **Finalización del Juego:** El juego continúa hasta que uno de los jugadores alcance 3 victorias o 3 derrotas.
+
+## Resumen de Estadísticas
+
+Al final del juego, se presenta un resumen que muestra cuántas veces el jugador ha ganado, perdido o empatado.
+
+## Instrucciones
 
 1. Abre el archivo `index.html` en tu navegador.
 
-2. Se te pedirá que ingreses un número para representar tu elección:
-   - 1 para Piedra 🪨
-   - 2 para Papel 📄
-   - 3 para Tijera ✂️
+2. Sigue las instrucciones presentadas en la ventana de prompt para ingresar tus elecciones.
 
-3. El juego mostrará tus elecciones y las de la máquina.
+3. Disfruta del juego y observa las estadísticas al final.
 
-4. El resultado del juego se mostrará en una alerta:
-   - Empate si las elecciones son iguales.
-   - Ganaste si vences a la elección de la máquina.
-   - Perdiste si la máquina vence tu elección.
-
-## Detalles Técnicos
-
-### Función `aleatorio(min, max)`
-
-Esta función genera un número aleatorio entre `min` y `max` (ambos inclusive).
-
-### Variables
-
-- `jugador`: Almacena la elección del jugador.
-- `pc`: Almacena la elección aleatoria de la máquina.
-
-### Elecciones del Jugador y de la Máquina
-
-Las elecciones se muestran en alertas para informar al usuario sobre las opciones seleccionadas.
-
-### Combate
-
-Se evalúa el resultado del juego con las siguientes condiciones:
-- Empate si las elecciones son iguales.
-- Ganaste si vences a la elección de la máquina.
-- Perdiste si la máquina vence tu elección.
-
-### Mensajes de Alerta
-
-Se utilizan alertas para comunicar de manera clara y sencilla el resultado del juego y las elecciones realizadas por el jugador y la máquina.
-
-## Notas
-
-- Si el jugador ingresa un número que no corresponde a ninguna de las opciones, se mostrará un mensaje indicando que no es válida.
-
-¡Diviértete jugando piedra, papel o tijera! 🪨 📄 ✂️
+¡Diviértete jugando Piedra, Papel o Tijera! 🪨📄✂️

@@ -6,8 +6,10 @@
     <script>
       // 1 piedra, 2 papel o 3 tijera
       let jugador = 0;
-      let pc = 2;
-      jugador = prompt("Elige : 1 para Piedra, 2 para papel o 3 para tijera");
+      let pc = Math.floor(Math.random() * 3) + 1;
+      jugador = prompt(
+        "🖖¡Hola! ingresa el número de tu elección:\n🪨 PIEDRA es 1, 📄 PAPEL es 2 y ✂️ TIJERA es 3"
+      );
       //alert("Elegiste " + jugador)
       if (jugador == 1) {
         alert("Elegistes ✊");
@@ -18,9 +20,7 @@
       } else {
         alert("NO ES NINGUNA DE LAS OPCIONES ❌");
       }
-
       // ELIJE MAQUINA.
-
       if (pc == 1) {
         alert("PC elije ✊");
       } else if (pc == 2) {
@@ -28,26 +28,20 @@
       } else if (pc == 3) {
         alert("PC elije ✌");
       }
-
       // COMBATE
-
       switch (true) {
         case pc == jugador:
           alert("EMPATE");
           break;
-
         case jugador == 1 && pc == 3:
           alert("GANASTE🏆");
           break;
-
         case jugador == 2 && pc == 1:
           alert("GANASTE🏆");
           break;
-
         case jugador == 3 && pc == 2:
           alert("GANASTE🏆");
           break;
-
         default:
           alert("PERDISTES ❌");
           break;
